@@ -8,7 +8,7 @@ module.exports = new WebpackConfig().extend('./webpack.config.common.babel.js').
     vendor: ['angular','angular-ui-router', 'localforage', 'angular-localforage']
   },
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: path.join(__dirname, '/docs'),
     filename: 'app.[name].js'
   },
   devtool: '#eval',

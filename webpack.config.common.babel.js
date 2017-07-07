@@ -8,7 +8,7 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 module.exports = new WebpackConfig().merge({
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: path.join(__dirname, '/docs'),
     filename: 'app.[name].js'
   },
   context:  path.join(__dirname,'/app'),
@@ -48,7 +48,7 @@ module.exports = new WebpackConfig().merge({
   },
   plugins: [
     new ExtractTextPlugin('app/css/dashboard.css'),
-    new CleanWebpackPlugin(['dist'], {
+    new CleanWebpackPlugin(['docs'], {
       root: __dirname,
       verbose: true,
       dry: false

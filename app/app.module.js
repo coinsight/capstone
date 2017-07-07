@@ -1,5 +1,5 @@
 import angular from 'angular';
-import uirouter from 'angular-ui-router';
+import uirouter from '@uirouter/angularjs';
 import dashboard from './components/dashboard/dashboard.module.js';
 
 import 'bootstrap/dist/css/bootstrap.css';
